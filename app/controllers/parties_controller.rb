@@ -29,7 +29,7 @@ class PartiesController < ApplicationController
     if @party.update(party_params)
       redirect_to party_path @party
     else
-      render :edit
+      render :edit  
     end
   end
 

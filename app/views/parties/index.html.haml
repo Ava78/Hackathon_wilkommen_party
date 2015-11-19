@@ -8,4 +8,4 @@
 
   = link_to "Nouvelle soirée", new_party_path
   = link_to "Editer", edit_party_path(party.id)
-  = link_to "Supprimer", party_path(party.id), method: :delete
+  = link_to "Supprimer", party_path(party.id), method: :delete, data: { confirm: " Sarah Connor ?  Oui ?? 'PAN' "}

@@ -1,13 +1,16 @@
 Rails.application.routes.draw do
 
+resources:parties
+root "parties#index"
+resources:users
+
+get "new" => "parties#new"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-resources:parties
-root "parties#index"
-resources:users
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

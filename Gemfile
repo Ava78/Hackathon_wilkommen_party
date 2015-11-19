@@ -6,13 +6,9 @@ gem 'devise'
 gem 'simple_form', '~> 3.2'
 
 gem 'bootstrap-sass', '~> 3.3.5'
-
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'sass-rails', '~> 5.0'
-# Use Uglifier as compressor for JavaScript assets
 
 gem 'sqlite3'
-# Use SCSS for stylesheets
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

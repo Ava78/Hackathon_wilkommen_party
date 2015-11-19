@@ -7,6 +7,14 @@
     = csrf_meta_tags
 
 %body
-  - Categorie.all.each do |categorie|
-    = link_to categorie.name, parties_path(categorie: categorie.name)
-  = yield
+  %nav.navbar.navbar-default
+    .container
+      .navbar-brand Soirée WCS
+      %ul.nav.navbar-nav
+        %li= link_to "Toutes les soirées", root_path
+        - Categorie.all.each do |categorie|
+          %li= link_to categorie.name, parties_path(categorie: categorie.name)
+      = link_to "Sacrées Soirées", new_party_path, class: "navbar-text navbar-right navbar-link"
+  .container
+    = yield
+

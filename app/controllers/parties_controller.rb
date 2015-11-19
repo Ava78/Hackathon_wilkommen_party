@@ -43,6 +43,9 @@ class PartiesController < ApplicationController
      redirect_to root_path
   end
 
+  # def desinscription
+  # end
+
   private
 
   def parties_params

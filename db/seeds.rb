@@ -112,3 +112,4 @@ Party.create([{ titre:' Randonnée à cheval',
                 adresse: 'Rue des Poneys, 28240 La Loupe'
 
 }])
+

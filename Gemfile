@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem 'haml'
 gem 'devise'
 
 gem 'simple_form', '~> 3.2'

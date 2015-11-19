@@ -18,18 +18,18 @@ class PartiesController < ApplicationController
     if @party.save
       redirect_to @party
     else
-      render 'New'
+      render :new
     end
   end
 
-  def edit 
+  def edit
   end
 
   def update
-    if @party.update(parties_params)
-      redirect_to @party
+    if @party.update(party_params)
+      redirect_to party_path @party
     else
-      render "Edit"
+      render :edit
     end
   end
 

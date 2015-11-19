@@ -1,5 +1,15 @@
 == README
 
+Bienvenue au Hackathon de la Wild Code School
+Aujourd'hui, nous développons une Appli en Rails pour gérer des soirées
+avec des participants qui s'incrivent / se désinscrivent
+ 
+
+
+
+
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 

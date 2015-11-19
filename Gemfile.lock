@@ -37,7 +37,11 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.3)
+<<<<<<< HEAD
     autoprefixer-rails (6.1.0.1)
+=======
+    autoprefixer-rails (6.0.3)
+>>>>>>> af3c771566678db3790b08bf55035f8216cb1dba
       execjs
       json
     binding_of_caller (0.7.2)

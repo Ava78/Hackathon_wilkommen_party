@@ -1,0 +1,9 @@
+- @parties.each do |party|
+  %h2= party.titre
+  %p= party.categorie
+  %p= party.prix
+  %p= party.date
+  %p= party.description
+  %p= party.nombreparticipants
+
+= link_to "Nouvelle soirée", new_party_path

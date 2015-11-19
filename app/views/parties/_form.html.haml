@@ -1,6 +1,6 @@
 = simple_form_for(@party, html: { class: 'form_horizontal'}) do |f|
+  = f.collection_select :categorie_id, Categorie.all, :id, :name, {promt: "Sacrée soirée Jean Pierre !!"}
   = f.input :titre, label: "Theme de la soirée" 
-  = f.input :categorie, label: "Catégorie" 
   = f.input :prix, label: "Prix" 
   = f.input :date, label:  "Date" 
   = f.input :heure,  label: "Heure" 

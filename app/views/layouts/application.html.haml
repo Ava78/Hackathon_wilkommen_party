@@ -2,9 +2,11 @@
 %html
   %head
     %title My Parties
-   
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
-  %body
-    = yield
+
+%body
+  - Categorie.all.each do |categorie|
+    = link_to categorie.name, parties_path(categorie: categorie.name)
+  = yield

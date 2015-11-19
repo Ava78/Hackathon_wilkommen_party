@@ -2,7 +2,12 @@ class PartiesController < ApplicationController
   before_action :find_party, only: [:show, :edit, :update, :destroy]
 
   def index
-    @parties = Party.all.order("created_at DESC")
+    if params[:categorie].blank? 
+      @parties = Party.all.order("created_at DESC")
+    else
+      @categorie_id = Categorie.find_by(name: params[:categorie]).id
+      @parties = Party.where(categorie_id: @categorie_id).order("created_at DESC")
+    end
   end
 
   def show
@@ -41,7 +46,7 @@ class PartiesController < ApplicationController
   private
 
   def parties_params
-    params.require(:party).permit(:avatar, :titre, :categorie, :prix, :date, :heure, :description, :nombreparticipants)
+    params.require(:party).permit(:avatar, :titre, :categorie, :prix, :date, :heure, :description, :nombreparticipants, :categorie_id)
   end
 
   def find_party

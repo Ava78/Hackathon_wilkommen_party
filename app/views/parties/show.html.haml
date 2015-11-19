@@ -9,6 +9,6 @@
     %button.btn.btn-default= link_to "Participer", @party.url
 
 #links
-  = link_to "Accueil", root_path
-  = link_to "Editer", edit_party_path(@party)
-  = link_to "Supprimer", party_path(@party), method:  :delete, data: { confirm: "Voulez-vous vraiment supprimer??"}
+  = link_to "Retour", root_path, class: "btn btn-sm btn-default"
+  = link_to "Editer", edit_party_path(@party), class: "btn btn-sm btn-default"
+  = link_to "Supprimer", party_path(@party), method:  :delete, data: { confirm: "Voulez-vous vraiment supprimer??"}, class: "btn btn-sm btn-default"

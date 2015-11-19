@@ -18,7 +18,7 @@ class PartiesController < ApplicationController
     if @party.save
       redirect_to @party
     else
-      render 'new'
+      render 'New'
     end
   end
 
@@ -26,9 +26,16 @@ class PartiesController < ApplicationController
   end
 
   def update
+    if @party.update(parties_params)
+      redirect_to @party
+    else
+      render "Edit"
+    end
   end
 
   def destroy
+     @party.destroy
+     redirect_to root_path
   end
 
   private

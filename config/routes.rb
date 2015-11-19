@@ -5,7 +5,9 @@ root "parties#index"
 resources:users
 
 get "new" => "parties#new"
-
+get "show" => "parties#show"
+get "edit" => "parties#edit"
+get "destroy" =>"parties#destroy"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

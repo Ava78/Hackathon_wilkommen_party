@@ -1,5 +1,5 @@
 - @parties.each do |party|
-  %h2= party.titre
+  %h2= link_to party.titre, party
   %p= party.categorie
   %p= party.prix
   %p= party.date
@@ -7,3 +7,5 @@
   %p= party.nombreparticipants
 
 = link_to "Nouvelle soirée", new_party_path
+= link_to "Editer", edit_party_path
+= link_to "Supprimer", destroy_party_path

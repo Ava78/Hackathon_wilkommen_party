@@ -2,6 +2,9 @@
 %p= @party.categorie
 %p= @party.prix
 %p= @party.date
+%p= @party.heure
 %p= @party.description
 
-= link_to " Accueil", root_path
+= link_to "Accueil", root_path
+= link_to "Editer", edit_party_path(@party)
+= link_to "Supprimer", party_path(@party), method:  :delete, data: { confirm: "Voulez-vous vraiment supprimer??"}

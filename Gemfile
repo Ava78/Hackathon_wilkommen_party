@@ -1,12 +1,8 @@
 source 'https://rubygems.org'
-<<<<<<< HEAD
-gem 'rails', '4.2.4'
-=======
 
+gem 'rails', '4.2.4'
 gem 'haml'
 gem 'devise'
-
->>>>>>> nelly
 gem 'simple_form', '~> 3.2'
 
 gem 'bootstrap-sass', '~> 3.3.5'

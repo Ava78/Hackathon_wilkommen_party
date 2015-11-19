@@ -5,5 +5,33 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
-  %body
-    = yield
+
+/ %body
+/   %nav.navbar.navbar-default
+/     .container
+/       .navbar-brand Soirée WCS
+/       %ul.nav.navbar-nav
+/         %li= link_to "Toutes les soirées", root_path
+/         - Categorie.all.each do |categorie|
+/           %li= link_to categorie.name, parties_path(categorie: categorie.name)
+/       = link_to "Créer une soirée", new_party_path, class: "navbar-text navbar-right navbar-link"
+/   .container
+/     .col-md-6.col-md-offset-3
+/       = yield
+
+%body
+  %nav.navbar.navbar-default
+    .container
+      .navbar-brand Soirée WCS
+      %button.navbar-toggle.collapsed{"aria-controls" => "navbar", "aria-expanded" => "false", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Menu
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      = link_to "Toutes les soirées", root_path
+      - Categorie.all.each do |categorie|
+        = link_to categorie.name, parties_path(categorie: categorie.name)
+      = link_to "Créer une soirée", new_party_path, class: "navbar-text navbar-right navbar-link"
+  .container
+    .col-md-6.col-md-offset-3
+      = yield

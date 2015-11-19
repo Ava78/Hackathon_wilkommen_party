@@ -1,7 +1,14 @@
-%h1= @party.titre
-%p= @party.categorie
-%p= @party.prix
-%p= @party.date
-%p= @party.description
+#parties
+  .party
+    %h2= @party.titre
+    / %p= @party.categorie  attnt cela affiche un lien. nous voudrons insérer une image de catégorie
+    %p= @party.prix 
+    %p= @party.date
+    %p= @party.heure
+    %p= @party.description
+    %button.btn.btn-default= link_to "Participer", @party.url
 
-= link_to " Accueil", root_path
+#links
+  = link_to "Retour", root_path, class: "btn btn-sm btn-default"
+  = link_to "Editer", edit_party_path(@party), class: "btn btn-sm btn-default"
+  = link_to "Supprimer", party_path(@party), method:  :delete, data: { confirm: "Voulez-vous vraiment supprimer??"}, class: "btn btn-sm btn-default"

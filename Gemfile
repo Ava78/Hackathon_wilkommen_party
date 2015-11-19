@@ -1,8 +1,16 @@
 source 'https://rubygems.org'
+<<<<<<< HEAD
 gem 'rails', '4.2.4'
+=======
+
+
+gem 'devise'
+
+>>>>>>> nelly
 gem 'simple_form', '~> 3.2'
 
-gem 'bootstrap-sass', '~> 3.3', '>= 3.3.5.1'
+gem 'bootstrap-sass', '~> 3.3.5'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

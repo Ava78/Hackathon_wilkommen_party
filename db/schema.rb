@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151119105120) do
+ActiveRecord::Schema.define(version: 20151119131748) do
 
   create_table "parties", force: :cascade do |t|
     t.string   "avatar"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20151119105120) do
     t.integer  "nombreparticipants"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
+    t.string   "adresse"
   end
 
 end

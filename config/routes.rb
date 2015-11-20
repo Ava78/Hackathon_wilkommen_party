@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :models
 resources:parties
 root "parties#index"
 resources:users

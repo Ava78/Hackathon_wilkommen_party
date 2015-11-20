@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+rake db:migratesource 'https://rubygems.org'
 
 gem 'rails', '4.2.4'
 gem 'haml'

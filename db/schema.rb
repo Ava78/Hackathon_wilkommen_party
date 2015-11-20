@@ -15,8 +15,14 @@ ActiveRecord::Schema.define(version: 20151120020237) do
 
   create_table "categories", force: :cascade do |t|
     t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "film"
+    t.string   "jeux"
+    t.string   "repas"
+    t.string   "balade"
+    t.string   "apero"
+    t.string   "anniversaire"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
   create_table "models", force: :cascade do |t|

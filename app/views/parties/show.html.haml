@@ -6,7 +6,7 @@
     %p= @party.date
     %p= @party.heure
     %p= @party.description
-    %button.btn.btn-default= link_to "Participer", @party.url
+    %button.btn.btn-default= link_to "Participer", reservations_path
 
 #links
   = link_to "Retour", root_path, class: "btn btn-sm btn-default"

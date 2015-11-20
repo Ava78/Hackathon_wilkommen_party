@@ -9,8 +9,8 @@
 
 User.create([{ email: 'ava@wcs.com',
               password: 'jecode4laloupe',
-              name: 'Duval',
-              first_name: 'Alexandra',
+              nom: 'Duval',
+              prenom: 'Alexandra',
               pseudo: 'Ava',
               phone: '0609012334'
 
@@ -19,8 +19,8 @@ User.create([{ email: 'ava@wcs.com',
 
 User.create([{ email: 'nelly@wcs.com',
               password: 'jecode4laloupe',
-              name: 'Duclos',
-              first_name: 'Nelly',
+              nom: 'Duclos',
+              prenom: 'Nelly',
               pseudo: 'Masiakasaurus',
               phone: '0609012334'
 
@@ -29,8 +29,8 @@ User.create([{ email: 'nelly@wcs.com',
 
 User.create([{ email: 'mahamadou@wcs.com',
               password: 'jecode4laloupe',
-              name: 'Traore',
-              first_name: 'mahamadou',
+              nom: 'Traore',
+              prenom: 'mahamadou',
               pseudo: 'momo',
               phone: '0609012334'
 
@@ -39,8 +39,8 @@ User.create([{ email: 'mahamadou@wcs.com',
 
 User.create([{ email: 'lucie@wcs.com',
               password: 'jecode4laloupe',
-              name: 'Mannechez',
-              first_name: 'Lucie',
+              nom: 'Mannechez',
+              prenom: 'Lucie',
               pseudo: 'Luciole',
               phone: '0609012334'
 
@@ -49,8 +49,8 @@ User.create([{ email: 'lucie@wcs.com',
 
 User.create([{ email: 'emmanuel@wcs.com',
               password: 'jecode4laloupe',
-              name: 'Maestracci',
-              first_name: 'Emanuel',
+              nom: 'Maestracci',
+              prenom: 'Emanuel',
               pseudo: 'Manu',
               phone: '0609012334'
 
@@ -58,7 +58,7 @@ User.create([{ email: 'emmanuel@wcs.com',
   }])
 
 Party.create([{ titre:'Loup Garou De Thiercelieu',
-                categorie: 'Jeux de société',
+                categorie_id: 4,
                 prix: '5.00',
                 date: '10/12/2015',
                 heure: '19:00',
@@ -68,8 +68,8 @@ Party.create([{ titre:'Loup Garou De Thiercelieu',
 
 }])
 
-Party.create([{ titre:'Soirée Raclette',
-                categorie: 'Repas',
+Party.create([{ titre:'Si on mangeait des gensives de porc?',
+                categorie_id: 2,
                 prix: '10.00',
                 date: '15/12/2015',
                 heure: '20:00',
@@ -80,7 +80,7 @@ Party.create([{ titre:'Soirée Raclette',
 }])
 
 Party.create([{ titre:' La cité de la peur',
-                categorie: 'Film',
+                categorie_id: 6,
                 prix: '3.00',
                 date: '30/11/2015',
                 heure: '21:00',
@@ -91,8 +91,20 @@ Party.create([{ titre:' La cité de la peur',
 
 }])
 
+Party.create([{ titre:' Anniversaire La Denrée ',
+                categorie_id: 5,
+                prix: '3.00',
+                date: '30/11/2015',
+                heure: '21:00',
+                description: ' Ah non dediou non dediou !!!! Versez Moi un canon le Glaude !',
+                nombreparticipants: '30',
+                adresse: '18 rue de la Gare, 28240 La Loupe'
+
+
+}])
+
 Party.create([{ titre:' Mario Kart',
-                categorie: 'Jeux Videos',
+                categorie_id: 3,
                 prix: '0.00',
                 date: '27/11/2015',
                 heure: '19:00',
@@ -103,7 +115,7 @@ Party.create([{ titre:' Mario Kart',
 }])
 
 Party.create([{ titre:' Randonnée à cheval',
-                categorie: 'Balades',
+                categorie_id: 1,
                 prix: '25.00',
                 date: '25/11/2015',
                 heure: '10:00',

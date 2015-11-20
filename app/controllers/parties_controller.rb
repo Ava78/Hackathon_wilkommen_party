@@ -1,6 +1,9 @@
 class PartiesController < ApplicationController
   before_action :find_party, only: [:show, :edit, :update, :destroy]
   
+  def home
+  end
+
   def index
     if params[:categorie].blank? 
       @parties = Party.all.order("created_at DESC")

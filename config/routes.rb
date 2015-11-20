@@ -5,8 +5,9 @@ devise_for :models
 devise_for :users
 
 resources:parties
-root "parties#index"
-get 'home' => 'parties#index'
+root 'parties#home'
+#get "parties#index"
+
 resources:users
 resource:reservations
   # The priority is based upon order of creation: first created -> highest priority.

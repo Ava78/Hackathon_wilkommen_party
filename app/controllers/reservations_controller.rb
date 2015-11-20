@@ -9,7 +9,7 @@ class ReservationsController < ApplicationController
   private
 
   def parties_params
-    params.require(:party).permit(:avatar, :url, :titre, :categorie, :prix, :date, :heure, :description, :nombreparticipants, :categorie_id)
+    params.require(:party).permit( :url, :titre, :categorie, :prix, :date, :heure, :description, :nombreparticipants, :categorie_id)
   end
 
   def find_party

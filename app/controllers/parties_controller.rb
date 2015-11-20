@@ -34,7 +34,7 @@ class PartiesController < ApplicationController
   end
 
   def update
-    if @party.update(party_params)
+    if @party.update(parties_params)
       redirect_to party_path @party
     else
       render :edit  

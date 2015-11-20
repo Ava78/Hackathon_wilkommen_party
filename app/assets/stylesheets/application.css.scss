@@ -27,11 +27,11 @@ html {
 
 body {
   height: 100%;
-  background: -webkit-linear-gradient(90deg, #1D976C 10%, #93F9B9 90%);
-  background:    -moz-linear-gradient(90deg, #1D976C 10%, #93F9B9 90%);
-  background:     -ms-linear-gradient(90deg, #1D976C 10%, #93F9B9 90%);
-  background:      -o-linear-gradient(90deg, #1D976C 10%, #93F9B9 90%);
-  background:         linear-gradient(90deg, #1D976C 10%, #93F9B9 90%);
+  background: -webkit-linear-gradient(90deg, #CD0074 10%, #E667AF 90%);
+  background:    -moz-linear-gradient(90deg, #CD0074 10%, #E667AF  90%);
+  background:     -ms-linear-gradient(90deg, #CD0074 10%, #E667AF 90%);
+  background:      -o-linear-gradient(90deg, #CD0074 10%, #E667AF 90%);
+  background:         linear-gradient(90deg, #CD0074 10%, #E667AF 90%);
   font-family: 'Lato', sans-serif;
 }
 
@@ -58,7 +58,7 @@ body {
   letter-spacing: -1px;
   font-size: 2em;
   font-weight: 300;
-  color: #1D976C !important;
+  color: #CD0074 !important;
 }
 
 #parties {
@@ -75,7 +75,7 @@ body {
       }
     }
     p {
-      color: rgba(250,250,250, 0.5);
+      color: #fff;
     }
   }
 }
@@ -83,3 +83,28 @@ body {
 #links {
   margin-top: 2em;
 }
+h1 {
+
+  color: #fff;
+}
+
+h3 {
+  color:#fff;
+}
+
+
+.btn-primary {
+  background:#CD0074;
+  color: #fff;
+}
+
+.btn-success{
+
+  color:#CD0074;
+}
+
+.btn-default {
+
+  color:#CD0074;
+}
+

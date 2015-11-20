@@ -1,5 +1,6 @@
 = simple_form_for(@party, html: { class: 'form_horizontal'}) do |f|
   = f.collection_select :categorie_id, Categorie.all, :id, :name, {promt: "Sacrée soirée Jean Pierre !!"}, input_html:{class: "dropdown-toggle"}
+  = f.file_field :image
   = f.input :titre, label: "Theme de la soirée", input_html:{class: "form-control"}
   = f.input :prix, label: "Prix", input_html:{class: "form-control"}
   = f.input :date, label:  "Date", input_html:{class: "form-control"}

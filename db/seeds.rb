@@ -68,7 +68,7 @@ Party.create([{ titre:'Loup Garou De Thiercelieu',
 
 }])
 
-Party.create([{ titre:'Soirée Raclette',
+Party.create([{ titre:'Si on mangeait des gensives de porc?',
                 categorie_id: 2,
                 prix: '10.00',
                 date: '15/12/2015',
@@ -91,12 +91,12 @@ Party.create([{ titre:' La cité de la peur',
 
 }])
 
-Party.create([{ titre:' Anniversaire Bbibi',
+Party.create([{ titre:' Anniversaire La Denrée ',
                 categorie_id: 5,
                 prix: '3.00',
                 date: '30/11/2015',
                 heure: '21:00',
-                description: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores odio doloribus, recusandae, quod ducimus nulla tempore dolorem facilis fuga numquam veniam hic natus labore voluptate ea earum dignissimos ipsam soluta.',
+                description: ' Ah non dediou non dediou !!!! Versez Moi un canon le Glaude !',
                 nombreparticipants: '30',
                 adresse: '18 rue de la Gare, 28240 La Loupe'
 

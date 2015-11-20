@@ -119,7 +119,14 @@ Party.create([{ titre:' Randonnée à cheval',
                 prix: '25.00',
                 date: '25/11/2015',
                 heure: '10:00',
-                description: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores odio doloribus, recusandae, quod ducimus nulla tempore dolorem facilis fuga numquam veniam hic natus labore voluptate ea earum dignissimos ipsam soluta.',
+                description: "Par un petit matin d'été 
+                              Quand on s'en va le coeur ravi 
+                              Qu'elle est belle la liberté 
+                              La liberté, 
+                              Quand il fait bon vivre sa vie 
+                              Au grand soleil d'Occitanie 
+                              Qu'elle est belle la liberté 
+                              La liberté.",
                 nombreparticipants: '8',
                 adresse: 'Rue des Poneys, 28240 La Loupe'
 

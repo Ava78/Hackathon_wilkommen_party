@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151119132513) do
+ActiveRecord::Schema.define(version: 20151120020237) do
+
+  create_table "categories", force: :cascade do |t|
+    t.string   "name"
+    t.string   "film"
+    t.string   "jeux"
+    t.string   "repas"
+    t.string   "balade"
+    t.string   "apero"
+    t.string   "anniversaire"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
 
   create_table "parties", force: :cascade do |t|
     t.string   "avatar"
@@ -25,11 +37,28 @@ ActiveRecord::Schema.define(version: 20151119132513) do
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
     t.string   "adresse"
+    t.integer  "categorie_id"
+    t.string   "url"
+  end
+
+  create_table "reservations", force: :cascade do |t|
+    t.integer  "nombre_personnes"
+    t.decimal  "prix_total"
+    t.boolean  "paiement"
+    t.integer  "user_id"
+    t.integer  "party_id"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
   end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
+    t.string   "nom"
+    t.string   "prenom"
+    t.string   "pseudo"
+    t.string   "avatar"
+    t.string   "phone"
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"

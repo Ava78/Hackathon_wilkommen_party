@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre_personnes: 1
+  prix_total: 9.99
+  paiement: false
+
+two:
+  nombre_personnes: 1
+  prix_total: 9.99
+  paiement: false

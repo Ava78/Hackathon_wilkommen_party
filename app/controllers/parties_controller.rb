@@ -35,11 +35,8 @@ class PartiesController < ApplicationController
 
   def update
     if @party.update(parties_params)
-<<<<<<< HEAD
       redirect_to party_path @party
-=======
       redirect_to @party
->>>>>>> 03178c25603f6cb973af8a82c7301216214a725c
     else
       render :edit  
     end
